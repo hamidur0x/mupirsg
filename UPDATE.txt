@@ -1,0 +1,188 @@
+<!-- Activities Section -->
+    <section class="section">
+        <div class="container">
+            <div class="section-title">
+                <h2>নিয়মিত কার্যক্রম</h2>
+            </div>
+            <div class="activities-grid">
+                <div class="activity-card">
+                    <div class="activity-img">
+                        <img src="https://images.unsplash.com/photo-1501555088652-021faa106b9b?ixlib=rb-4.0.3&auto=format&fit=crop&w=1473&q=80" alt="ক্যাম্পিং">
+                    </div>
+                    <div class="activity-content">
+                        <h3>ক্যাম্পিং ও রোভিং</h3>
+                        <p>প্রকৃতির কাছাকাছি থেকে জীবন দক্ষতা শেখার জন্য নিয়মিত ক্যাম্পিং ও রোভিং কার্যক্রম পরিচালনা করা হয়। এই কার্যক্রমের মাধ্যমে সদস্যরা প্রকৃতির সাথে খাপ খাইয়ে নেওয়া, দলগত কাজ, এবং বেঁচে থাকার কৌশল শেখে।</p>
+                        <ul>
+                            <li>বর্ষাকালীন ক্যাম্প</li>
+                            <li>শীতকালীন রোভিং</li>
+                            <li>প্রকৃতি ভ্রমণ</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="activity-card">
+                    <div class="activity-img">
+                        <img src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?ixlib=rb-4.0.3&auto=format&fit=crop&w=1470&q=80" alt="সামাজিক সেবা">
+                    </div>
+                    <div class="activity-content">
+                        <h3>সামাজিক সেবা</h3>
+                        <p>সমাজের বিভিন্ন স্তরের মানুষের পাশে দাঁড়ানো এবং তাদের সেবা প্রদান আমাদের নিয়মিত কার্যক্রমের অংশ। আমরা বিভিন্ন সামাজিক সমস্যা সমাধানে কাজ করি এবং সুবিধাবঞ্চিত মানুষের সাহায্যে এগিয়ে আসি।</p>
+                        <ul>
+                            <li>রক্তদান শিবির</li>
+                            <li>বৃদ্ধাশ্রম সেবা</li>
+                            <li>বন্যা ত্রাণ কার্যক্রম</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="activity-card">
+                    <div class="activity-img">
+                        <img src="https://images.unsplash.com/photo-1544966503-eb6ea6d5db8a?ixlib=rb-4.0.3&auto=format&fit=crop&w=1470&q=80" alt="প্রশিক্ষণ">
+                    </div>
+                    <div class="activity-content">
+                        <h3>দক্ষতা উন্নয়ন প্রশিক্ষণ</h3>
+                        <p>প্রথম সাহায্য, দুর্যোগ ব্যবস্থাপনা, নেতৃত্ব বিকাশসহ বিভিন্ন জীবন দক্ষতা বিষয়ক প্রশিক্ষণ প্রদান করা হয়। এই প্রশিক্ষণগুলো সদস্যদের ব্যক্তিগত ও পেশাগত জীবনে সফল হতে সাহায্য করে।</p>
+                        <ul>
+                            <li>প্রাথমিক চিকিৎসা প্রশিক্ষণ</li>
+                            <li>দুর্যোগ ব্যবস্থাপনা</li>
+                            <li>নেতৃত্ব বিকাশ</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="activity-card">
+                    <div class="activity-img">
+                        <img src="https://images.unsplash.com/photo-1466692476868-aef1dfb1e735?ixlib=rb-4.0.3&auto=format&fit=crop&w=1470&q=80" alt="পরিবেশ সুরক্ষা">
+                    </div>
+                    <div class="activity-content">
+                        <h3>পরিবেশ সুরক্ষা</h3>
+                        <p>পরিবেশ সংরক্ষণ ও সুরক্ষায় আমাদের বিভিন্ন কার্যক্রম রয়েছে। আমরা বৃক্ষরোপণ, পরিচ্ছন্নতা অভিযান, এবং পরিবেশ সচেতনতা কার্যক্রম পরিচালনা করি।</p>
+                        <ul>
+                            <li>বৃক্ষরোপণ অভিযান</li>
+                            <li>প্লাস্টিক মুক্ত ক্যাম্পাস</li>
+                            <li>পরিবেশ সচেতনতা</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="activity-card">
+                    <div class="activity-img">
+                        <img src="https://images.unsplash.com/photo-1532635242-8e2ee96adc6a?ixlib=rb-4.0.3&auto=format&fit=crop&w=1470&q=80" alt="সাংস্কৃতিক কার্যক্রম">
+                    </div>
+                    <div class="activity-content">
+                        <h3>সাংস্কৃতিক কার্যক্রম</h3>
+                        <p>বিভিন্ন সাংস্কৃতিক কার্যক্রমের মাধ্যমে আমরা আমাদের সদস্যদের সৃজনশীলতা বিকাশে সহায়তা করি। এই কার্যক্রমগুলো সদস্যদের মধ্যে সাংস্কৃতিক চেতনা ও দেশপ্রেম জাগ্রত করে।</p>
+                        <ul>
+                            <li>বাংলাদেশের ঐতিহ্য সংরক্ষণ</li>
+                            <li>সাংস্কৃতিক অনুষ্ঠান</li>
+                            <li>জাতীয় দিবস উদযাপন</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="activity-card">
+                    <div class="activity-img">
+                        <img src="https://images.unsplash.com/photo-1559027615-cd4628902d4a?ixlib=rb-4.0.3&auto=format&fit=crop&w=1474&q=80" alt="খেলাধুলা">
+                    </div>
+                    <div class="activity-content">
+                        <h3>খেলাধুলা ও শরীরচর্চা</h3>
+                        <p>নিয়মিত খেলাধুলা ও শরীরচর্চার মাধ্যমে সদস্যদের শারীরিক ও মানসিক সুস্থতা নিশ্চিত করা হয়। এই কার্যক্রমগুলো সদস্যদের মধ্যে দলগত কাজ ও শৃঙ্খলাবোধ গড়ে তুলতে সাহায্য করে।</p>
+                        <ul>
+                            <li>বার্ষিক ক্রীড়া প্রতিযোগিতা</li>
+                            <li>ইনডোর গেমস</li>
+                            <li>যোগব্যায়াম সেশন</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Upcoming Events -->
+    <section class="section activities">
+        <div class="container">
+            <div class="section-title">
+                <h2>আসন্ন ইভেন্ট</h2>
+            </div>
+            <div class="events-timeline">
+                <div class="event-item">
+                    <div class="event-date">১৫ ডিসেম্বর, ২০২৩</div>
+                    <h3>বর্ষাকালীন ক্যাম্প</h3>
+                    <p>মুন্সিগঞ্জের ঐতিহাসিক স্থানগুলো পরিদর্শন ও ক্যাম্পিং কার্যক্রম। এই ক্যাম্পে অংশগ্রহণের জন্য রেজিস্ট্রেশন খোলা আছে।</p>
+                </div>
+                <div class="event-item">
+                    <div class="event-date">২৬ ডিসেম্বর, ২০২৩</div>
+                    <h3>বৃক্ষরোপণ অভিযান</h3>
+                    <p>মুন্সিগঞ্জ পলিটেকনিক ইন্সটিটিউট ক্যাম্পাসে বৃক্ষরোপণ অভিযান। সকল সদস্য ও স্বেচ্ছাসেবকদের অংশগ্রহণ কামনা করা হচ্ছে।</p>
+                </div>
+                <div class="event-item">
+                    <div class="event-date">৫ জানুয়ারি, ২০২৪</div>
+                    <h3>প্রাথমিক চিকিৎসা প্রশিক্ষণ</h3>
+                    <p>বাংলাদেশ রেড ক্রিসেন্ট সোসাইটির সহযোগিতায় প্রাথমিক চিকিৎসা বিষয়ক বিশেষ প্রশিক্ষণ কর্মশালা।</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+     <!-- Team Section -->
+    <section class="section">
+        <div class="container">
+            <div class="section-title">
+                <h2>আমাদের টিম</h2>
+            </div>
+            <div class="team-grid">
+                <div class="team-member">
+                    <div class="member-img">
+                        <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?ixlib=rb-4.0.3&auto=format&fit=crop&w=687&q=80" alt="গ্রুপ লিডার">
+                    </div>
+                    <div class="member-info">
+                        <h3>ড. আহমেদ হোসেন</h3>
+                        <p class="member-role">গ্রুপ লিডার</p>
+                        <p>১৫ বছর অভিজ্ঞতা সহ আমাদের গ্রুপ লিডার</p>
+                    </div>
+                </div>
+                <div class="team-member">
+                    <div class="member-img">
+                        <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?ixlib=rb-4.0.3&auto=format&fit=crop&w=688&q=80" alt="সহকারী লিডার">
+                    </div>
+                    <div class="member-info">
+                        <h3>নুসরাত জাহান</h3>
+                        <p class="member-role">সহকারী লিডার</p>
+                        <p>১০ বছর অভিজ্ঞতা সহ আমাদের সহকারী লিডার</p>
+                    </div>
+                </div>
+                <div class="team-member">
+                    <div class="member-img">
+                        <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-4.0.3&auto=format&fit=crop&w=1170&q=80" alt="প্রশিক্ষক">
+                    </div>
+                    <div class="member-info">
+                        <h3>রফিকুল ইসলাম</h3>
+                        <p class="member-role">প্রধান প্রশিক্ষক</p>
+                        <p>১২ বছর অভিজ্ঞতা সহ আমাদের প্রধান প্রশিক্ষক</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
