@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>যোগাযোগ - মুন্সিগঞ্জ পলিটেকনিক রোভার স্কাউট</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="/css/style.css">
 </head>
 <body>
     <!-- Header Section -->
@@ -35,7 +35,7 @@
     </header>
 
     <!-- Page Hero -->
-    <section class="hero" style="background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?ixlib=rb-4.0.3&auto=format&fit=crop&w=1472&q=80');">
+    <section class="hero">
         <div class="container">
             <h2>যোগাযোগ করুন</h2>
             <p>আমাদের সাথে যোগাযোগ করতে নিচের ফর্মটি ব্যবহার করুন</p>
@@ -65,7 +65,7 @@
                         </div>
                         <div class="contact-details">
                             <h3>ফোন</h3>
-                            <p>N/A<br>N/A</p>
+                            <p>+৮৮০১৭XX-XXXXXX<br>+৮৮০১৯XX-XXXXXX</p>
                         </div>
                     </div>
                     <div class="contact-item">
@@ -74,7 +74,7 @@
                         </div>
                         <div class="contact-details">
                             <h3>ইমেইল</h3>
-                            <p>N/A</p>
+                            <p>emni@gmail.com</p>
                         </div>
                     </div>
                     <div class="contact-item">
@@ -83,7 +83,7 @@
                         </div>
                         <div class="contact-details">
                             <h3>কার্যকালীন সময়</h3>
-                            <p>N/A<br>N/A</p>
+                            <p>শনিবার - বৃহস্পতিবার<br>সকাল ৯:০০ - বিকাল ৫:০০</p>
                         </div>
                     </div>
                     <div class="social-links">
@@ -94,22 +94,22 @@
                     </div>
                 </div>
                 <div class="contact-form">
-                    <form>
+                    <form id="contact-form" action="mailto:hamidurrahman0705@gmail.com" method="post" enctype="text/plain">
                         <div class="form-group">
                             <label for="name">আপনার নাম</label>
-                            <input type="text" id="name" class="form-control" required>
+                            <input type="text" id="name" name="name" class="form-control" required>
                         </div>
                         <div class="form-group">
                             <label for="email">ইমেইল ঠিকানা</label>
-                            <input type="email" id="email" class="form-control" required>
+                            <input type="email" id="email" name="email" class="form-control" required>
                         </div>
                         <div class="form-group">
                             <label for="phone">ফোন নম্বর</label>
-                            <input type="tel" id="phone" class="form-control" required>
+                            <input type="tel" id="phone" name="phone" class="form-control" required>
                         </div>
                         <div class="form-group">
                             <label for="subject">বিষয়</label>
-                            <select id="subject" class="form-control" required>
+                            <select id="subject" name="subject" class="form-control" required>
                                 <option value="">বিষয় নির্বাচন করুন</option>
                                 <option value="membership">সদস্যতা সম্পর্কিত</option>
                                 <option value="activity">কার্যক্রম সম্পর্কিত</option>
@@ -120,9 +120,9 @@
                         </div>
                         <div class="form-group">
                             <label for="message">বার্তা</label>
-                            <textarea id="message" class="form-control" required placeholder="আপনার বার্তাটি এখানে লিখুন..."></textarea>
+                            <textarea id="message" name="message" class="form-control" required placeholder="আপনার বার্তাটি এখানে লিখুন..."></textarea>
                         </div>
-                        <button type="submit" class="btn">বার্তা পাঠান</button>
+                        <button type="submit" class="btn btn-block">বার্তা পাঠান</button>
                     </form>
                 </div>
             </div>
@@ -137,7 +137,7 @@
             </div>
             <div style="width: 100%; height: 400px; background-color: #f5f5f5; border-radius: 10px; overflow: hidden; box-shadow: 0 5px 15px rgba(0,0,0,0.1);">
                 <iframe 
-                    src=https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3656.9833412530884!2d90.4833072760832!3d23.5690417787946!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755afd4fdfaf20d%3A0x6cf0a23eb7ac2445!2sMunshiganj%20Polytechnic%20Institute!5e0!3m2!1sen!2sbd!4v1759649131738!5m2!1sen!2sbd" 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3656.9833412530884!2d90.4833072760832!3d23.5690417787946!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755afd4fdfaf20d%3A0x6cf0a23eb7ac2445!2sMunshiganj%20Polytechnic%20Institute!5e0!3m2!1sen!2sbd!4v1759649131738!5m2!1sen!2sbd" 
                     width="100%" 
                     height="100%" 
                     style="border:0;" 
@@ -181,7 +181,7 @@
         <div class="container">
             <div class="footer-content">
                 <div class="footer-image">
-                    <img src="../images/logo.png" alt="404">
+                    <img src="../images/logo.png" alt="লোগো">
                 </div>
                 <div class="footer-column">
                     <h3>মুন্সিগঞ্জ পলিটেকনিক রোভার স্কাউট</h3>
@@ -196,21 +196,21 @@
                 <div class="footer-column">
                     <h3>দ্রুত লিংক</h3>
                     <ul class="footer-links">
-                        <li><a href="index.html">হোম</a></li>
-                        <li><a href="pages/about.html">আমাদের সম্পর্কে</a></li>
-                        <li><a href="pages/activities.html">কার্যক্রম</a></li>
-                        <li><a href="pages/gallery.html">গ্যালারি</a></li>
-                        <li><a href="pages/contact.html">যোগাযোগ</a></li>
+                        <li><a href="../index.html">হোম</a></li>
+                        <li><a href="about.html">আমাদের সম্পর্কে</a></li>
+                        <li><a href="activities.html">কার্যক্রম</a></li>
+                        <li><a href="gallery.html">গ্যালারি</a></li>
+                        <li><a href="contact.html">যোগাযোগ</a></li>
                     </ul>
                 </div>
                 <div class="footer-column">
                     <h3>কার্যক্রম</h3>
                     <ul class="footer-links">
-                        <li><a href="pages/activities.html">ক্যাম্পিং</a></li>
-                        <li><a href="pages/activities.html">সামাজিক সেবা</a></li>
-                        <li><a href="pages/activities.html">প্রশিক্ষণ</a></li>
-                        <li><a href="pages/activities.html">রক্তদান</a></li>
-                        <li><a href="pages/activities.html">বৃক্ষরোপণ</a></li>
+                        <li><a href="activities.html">ক্যাম্পিং</a></li>
+                        <li><a href="activities.html">সামাজিক সেবা</a></li>
+                        <li><a href="activities.html">প্রশিক্ষণ</a></li>
+                        <li><a href="activities.html">রক্তদান</a></li>
+                        <li><a href="activities.html">বৃক্ষরোপণ</a></li>
                     </ul>
                 </div>
             </div>
@@ -220,6 +220,43 @@
         </div>
     </footer>
 
-    <script src="../js/main.js"></script>
+    <script>
+        // ফর্ম সাবমিশন হ্যান্ডলার
+        document.getElementById('contact-form').addEventListener('submit', function(e) {
+            // ফর্ম ভ্যালিডেশন
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+            const phone = document.getElementById('phone').value;
+            const subject = document.getElementById('subject').value;
+            const message = document.getElementById('message').value;
+            
+            if (!name || !email || !phone || !subject || !message) {
+                e.preventDefault();
+                alert('দয়া করে সমস্ত প্রয়োজনীয় তথ্য প্রদান করুন।');
+                return;
+            }
+            
+            // ইমেইল ভ্যালিডেশন
+            const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            if (!emailRegex.test(email)) {
+                e.preventDefault();
+                alert('দয়া করে একটি বৈধ ইমেইল ঠিকানা প্রদান করুন।');
+                return;
+            }
+            
+            // সফল বার্তা
+            alert('আপনার বার্তা ইমেইল ক্লায়েন্টে পাঠানো হচ্ছে। দয়া করে ইমেইল সেন্ড বাটনে ক্লিক করুন।');
+        });
+        
+        // মোবাইল মেনু টগল
+        document.querySelector('.mobile-menu').addEventListener('click', function() {
+            const nav = document.querySelector('nav ul');
+            if (nav.style.display === 'block') {
+                nav.style.display = 'none';
+            } else {
+                nav.style.display = 'block';
+            }
+        });
+    </script>
 </body>
 </html>
