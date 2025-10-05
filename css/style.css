@@ -646,188 +646,230 @@ footer {
     color: #ddd;
 }
 
-/* Responsive Styles */
-@media (max-width: 992px) {
+ @media (max-width: 992px) {
+            .about-content,
+            .contact-container {
+                flex-direction: column;
+            }
 
-    .about-content,
-    .contact-container {
-        flex-direction: column;
-    }
+            .hero h2 {
+                font-size: 2.2rem;
+            }
+        }
 
-    .hero h2 {
-        font-size: 2.2rem;
-    }
-}
+        @media (max-width: 768px) {
+            nav ul {
+                display: none;
+                position: absolute;
+                top: 100%;
+                left: 0;
+                width: 100%;
+                background-color: var(--primary);
+                flex-direction: column;
+                padding: 20px 0;
+                box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+            }
 
-@media (max-width: 768px) {
-    nav ul {
-        display: none;
-        position: absolute;
-        top: 100%;
-        left: 0;
-        width: 100%;
-        background-color: var(--primary);
-        flex-direction: column;
-        padding: 20px 0;
-        box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
-    }
+            nav ul.show {
+                display: flex;
+            }
 
-    nav ul.show {
-        display: flex;
-    }
+            nav ul li {
+                margin: 0;
+                text-align: center;
+            }
 
-    nav ul li {
-        margin: 0;
-        text-align: center;
-    }
+            nav ul li a {
+                display: block;
+                padding: 12px 0;
+            }
 
-    nav ul li a {
-        display: block;
-        padding: 12px 0;
-    }
+            .mobile-menu {
+                display: block;
+            }
 
-    .mobile-menu {
-        display: block;
-    }
+            .hero {
+                padding: 80px 0;
+            }
 
-    .hero {
-        padding: 80px 0;
-    }
+            .hero h2 {
+                font-size: 1.8rem;
+            }
 
-    .hero h2 {
-        font-size: 1.8rem;
-    }
+            .section {
+                padding: 60px 0;
+            }
+            
+            /* Mobile adjustments for team grid */
+            .team-grid-top {
+                grid-template-columns: 1fr;
+                gap: 20px;
+                padding: 30px 0;
+            }
+            
+            .team-member-top img {
+                height: 250px;
+            }
+            
+            .team-member-top h3 {
+                font-size: 1.3rem;
+            }
+            
+            .team-member-top p {
+                font-size: 0.9rem;
+            }
+            
+            .team-member-top:hover {
+                transform: translateY(-5px) scale(1.02);
+            }
+        }
 
-    .section {
-        padding: 60px 0;
-    }
-}
+        @media (max-width: 576px) {
+            .logo-text h1 {
+                font-size: 1.2rem;
+            }
 
-@media (max-width: 576px) {
-    .logo-text h1 {
-        font-size: 1.2rem;
-    }
+            .hero h2 {
+                font-size: 1.6rem;
+            }
 
-    .hero h2 {
-        font-size: 1.6rem;
-    }
+            .section-title h2 {
+                font-size: 1.8rem;
+            }
+            
+            .team-grid-top {
+                padding: 20px 0;
+                gap: 15px;
+            }
+            
+            .team-member-top img {
+                height: 200px;
+            }
+            
+            .team-member-top h3 {
+                font-size: 1.2rem;
+            }
+            
+            .team-member-top p {
+                font-size: 0.85rem;
+            }
+            
+            .one {
+                margin-top: 20px;
+            }
+        }
 
-    .section-title h2 {
-        font-size: 1.8rem;
-    }
-}
+        /* Crew Council Specific Styles */
+        .profile-details {
+            margin: 20px 0;
+        }
 
-/* Crew Council Specific Styles */
-.profile-details {
-    margin: 20px 0;
-}
+        .profile-details h4 {
+            color: var(--primary);
+            margin: 15px 0 10px 0;
+        }
 
-.profile-details h4 {
-    color: var(--primary);
-    margin: 15px 0 10px 0;
-}
+        .profile-details ul {
+            list-style-type: none;
+            padding-left: 0;
+        }
 
-.profile-details ul {
-    list-style-type: none;
-    padding-left: 0;
-}
+        .profile-details li {
+            padding: 5px 0;
+            border-bottom: 1px solid #eee;
+        }
 
-.profile-details li {
-    padding: 5px 0;
-    border-bottom: 1px solid #eee;
-}
+        .profile-details li:last-child {
+            border-bottom: none;
+        }
 
-.profile-details li:last-child {
-    border-bottom: none;
-}
+        .profile-details strong {
+            color: var(--secondary);
+            min-width: 120px;
+            display: inline-block;
+        }
 
-.profile-details strong {
-    color: var(--secondary);
-    min-width: 120px;
-    display: inline-block;
-}
+        blockquote {
+            font-style: italic;
+            border-left: 4px solid var(--accent);
+            padding-left: 20px;
+            margin: 20px 0;
+            color: #555;
+        }
 
-blockquote {
-    font-style: italic;
-    border-left: 4px solid var(--accent);
-    padding-left: 20px;
-    margin: 20px 0;
-    color: #555;
-}
+        .member-role {
+            color: var(--secondary);
+            font-weight: 600;
+            font-size: 1.1rem;
+        }
 
-.member-role {
-    color: var(--secondary);
-    font-weight: 600;
-    font-size: 1.1rem;
-}
+        /* Timeline for achievements */
+        .achievement-timeline {
+            position: relative;
+            max-width: 800px;
+            margin: 0 auto;
+        }
 
-/* Timeline for achievements */
-.achievement-timeline {
-    position: relative;
-    max-width: 800px;
-    margin: 0 auto;
-}
+        .achievement-timeline::before {
+            content: '';
+            position: absolute;
+            left: 50%;
+            top: 0;
+            bottom: 0;
+            width: 2px;
+            background: var(--accent);
+            transform: translateX(-50%);
+        }
 
-.achievement-timeline::before {
-    content: '';
-    position: absolute;
-    left: 50%;
-    top: 0;
-    bottom: 0;
-    width: 2px;
-    background: var(--accent);
-    transform: translateX(-50%);
-}
+        .achievement-item {
+            background: white;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+            position: relative;
+            width: 45%;
+        }
 
-.achievement-item {
-    background: white;
-    padding: 20px;
-    margin: 20px 0;
-    border-radius: 10px;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
-    position: relative;
-    width: 45%;
-}
+        .achievement-item:nth-child(odd) {
+            margin-right: 55%;
+        }
 
-.achievement-item:nth-child(odd) {
-    margin-right: 55%;
-}
+        .achievement-item:nth-child(even) {
+            margin-left: 55%;
+        }
 
-.achievement-item:nth-child(even) {
-    margin-left: 55%;
-}
+        .achievement-item::before {
+            content: '';
+            position: absolute;
+            top: 20px;
+            width: 20px;
+            height: 20px;
+            background: var(--primary);
+            border-radius: 50%;
+        }
 
-.achievement-item::before {
-    content: '';
-    position: absolute;
-    top: 20px;
-    width: 20px;
-    height: 20px;
-    background: var(--primary);
-    border-radius: 50%;
-}
+        .achievement-item:nth-child(odd)::before {
+            right: -10px;
+        }
 
-.achievement-item:nth-child(odd)::before {
-    right: -10px;
-}
+        .achievement-item:nth-child(even)::before {
+            left: -10px;
+        }
 
-.achievement-item:nth-child(even)::before {
-    left: -10px;
-}
+        @media (max-width: 768px) {
+            .achievement-timeline::before {
+                left: 20px;
+            }
 
-@media (max-width: 768px) {
-    .achievement-timeline::before {
-        left: 20px;
-    }
+            .achievement-item {
+                width: calc(100% - 60px);
+                margin-left: 60px !important;
+                margin-right: 0 !important;
+            }
 
-    .achievement-item {
-        width: calc(100% - 60px);
-        margin-left: 60px !important;
-        margin-right: 0 !important;
-    }
-
-    .achievement-item::before {
-        left: -30px !important;
-        right: auto !important;
-    }
-}
+            .achievement-item::before {
+                left: -30px !important;
+                right: auto !important;
+            }
+        }
