@@ -1,9 +1,14 @@
 :root {
-    --primary: #14532d;    /* Deep natural green */
-    --secondary: #c1121f;  /* Strong red accent */
-    --accent: #ffd700;     /* Gold/yellow accent for buttons */
-    --light: #f7f7f7;      /* Light background */
-    --dark: #1a1a1a;       /* Text & dark sections */
+    --primary: #1a472a;
+    /* Deep natural green */
+    --secondary: #c1121f;
+    /* Strong red accent */
+    --accent: #ffd700;
+    /* Gold/yellow accent for buttons */
+    --light: #f7f7f7;
+    /* Light background */
+    --dark: #1a1a1a;
+    /* Text & dark sections */
 }
 
 
@@ -52,7 +57,7 @@ header {
 .logo img {
     height: 60px;
     margin-right: 15px;
-    filter: drop-shadow(2px 2px 4px rgba(0,0,0,0.3));
+    filter: drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.3));
 }
 
 .logo-text h1 {
@@ -384,54 +389,108 @@ textarea.form-control {
 }
 
 
- /* Team Grid Styles */
-        .team-grid-top {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            padding: 60px;
-            background-color: #f5f5f5;
-            min-height: 80vh;
-        }
+/* Team Grid Styles */
+.team-grid-top {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 60px;
+    background-color: #f5f5f5;
+    min-height: 80vh;
+}
 
-        .team-member-top {
-            background: white;
-            border-radius: 15px;
-            overflow: hidden;
-            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
-            text-align: center;
-            width: 450px;
-            transition: transform 0.3s ease;
-        }
+.team-member-top {
+    background: white;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    text-align: center;
+    width: 450px;
+    transition: transform 0.3s ease;
+}
 
-        .team-member-top:hover {
-            transform: translateY(-8px) scale(1.03);
-        }
+.team-member-top:hover {
+    transform: translateY(-8px) scale(1.03);
+}
 
-        .team-member-top img {
-            width: 100%;
-            height: 400px;
-            object-fit: cover;
-            border-bottom: 1px solid #eee;
-            transition: transform 0.3s ease;
-        }
+.team-member-top img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    border-bottom: 1px solid #eee;
+    transition: transform 0.3s ease;
+}
 
-        .team-member-top img:hover {
-            transform: scale(1.05);
-        }
+.team-member-top img:hover {
+    transform: scale(1.05);
+}
 
-        .team-member-top h3 {
-            margin: 15px 0 5px;
-            font-size: 1.5rem;
-            color: #d42222;
-        }
+.team-member-top h3 {
+    margin: 15px 0 5px;
+    font-size: 1.5rem;
+    color: #d42222;
+}
 
-        .team-member-top p {
-            margin: 0 0 15px;
-            color: #000000;
-            font-size: 1rem;
-        }
+.team-member-top p {
+    margin: 0 0 15px;
+    color: #000000;
+    font-size: 1rem;
+}
 
+.one {
+    margin-top: 40px;
+}
+
+/* Tabs Navigation */
+.tabs {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 40px;
+}
+
+.tab-btn {
+    padding: 12px 25px;
+    background-color: #e9ecef;
+    border: none;
+    border-radius: 30px;
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.tab-btn.active {
+    background-color: #1a472a;
+    color: white;
+}
+
+.tab-btn:hover:not(.active) {
+    background-color: #d4edda;
+}
+
+/* Crew Council Styles */
+.council-container {
+    display: none;
+}
+
+.council-container.active {
+    display: block;
+}
+
+.council-title {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.council-title h2 {
+    font-size: 1.8rem;
+    color: #1a472a;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #c1121f;
+    display: inline-block;
+}
 
 
 
@@ -589,10 +648,12 @@ footer {
 
 /* Responsive Styles */
 @media (max-width: 992px) {
-    .about-content, .contact-container {
+
+    .about-content,
+    .contact-container {
         flex-direction: column;
     }
-    
+
     .hero h2 {
         font-size: 2.2rem;
     }
@@ -610,33 +671,33 @@ footer {
         padding: 20px 0;
         box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
     }
-    
+
     nav ul.show {
         display: flex;
     }
-    
+
     nav ul li {
         margin: 0;
         text-align: center;
     }
-    
+
     nav ul li a {
         display: block;
         padding: 12px 0;
     }
-    
+
     .mobile-menu {
         display: block;
     }
-    
+
     .hero {
         padding: 80px 0;
     }
-    
+
     .hero h2 {
         font-size: 1.8rem;
     }
-    
+
     .section {
         padding: 60px 0;
     }
@@ -646,11 +707,11 @@ footer {
     .logo-text h1 {
         font-size: 1.2rem;
     }
-    
+
     .hero h2 {
         font-size: 1.6rem;
     }
-    
+
     .section-title h2 {
         font-size: 1.8rem;
     }
@@ -758,13 +819,13 @@ blockquote {
     .achievement-timeline::before {
         left: 20px;
     }
-    
+
     .achievement-item {
         width: calc(100% - 60px);
         margin-left: 60px !important;
         margin-right: 0 !important;
     }
-    
+
     .achievement-item::before {
         left: -30px !important;
         right: auto !important;
