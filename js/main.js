@@ -630,7 +630,7 @@ document.addEventListener('DOMContentLoaded', () => {
   navLinks.forEach(link => {
     const linkPage = link.getAttribute("href").split("/").pop();
     if (linkPage === currentPage) {
-      link.style.color = "red";
+      link.style.color = "#399042";
       link.style.fontWeight = "700";
     }
   });
