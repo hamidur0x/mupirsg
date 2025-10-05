@@ -635,3 +635,39 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   });
 });
+ // ফর্ম সাবমিশন হ্যান্ডলার
+        document.getElementById('contact-form').addEventListener('submit', function(e) {
+            // ফর্ম ভ্যালিডেশন
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+            const phone = document.getElementById('phone').value;
+            const subject = document.getElementById('subject').value;
+            const message = document.getElementById('message').value;
+            
+            if (!name || !email || !phone || !subject || !message) {
+                e.preventDefault();
+                alert('দয়া করে সমস্ত প্রয়োজনীয় তথ্য প্রদান করুন।');
+                return;
+            }
+            
+            // ইমেইল ভ্যালিডেশন
+            const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            if (!emailRegex.test(email)) {
+                e.preventDefault();
+                alert('দয়া করে একটি বৈধ ইমেইল ঠিকানা প্রদান করুন।');
+                return;
+            }
+            
+            // সফল বার্তা
+            alert('আপনার বার্তা ইমেইল ক্লায়েন্টে পাঠানো হচ্ছে। দয়া করে ইমেইল সেন্ড বাটনে ক্লিক করুন।');
+        });
+        
+        // মোবাইল মেনু টগল
+        document.querySelector('.mobile-menu').addEventListener('click', function() {
+            const nav = document.querySelector('nav ul');
+            if (nav.style.display === 'block') {
+                nav.style.display = 'none';
+            } else {
+                nav.style.display = 'block';
+            }
+        });
