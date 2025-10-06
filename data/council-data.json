@@ -1,0 +1,61 @@
+{
+  "councils": [
+    {
+      "id": 10,
+      "name": "১০ম ক্রু কাউন্সিল",
+      "year": "২০১৩-২০১৪",
+      "seniorRover": {
+        "name": "মোঃ কামরুল হাসান",
+        "department": "কম্পিউটার টেকনোলজি",
+        "responsibility": "সিনিয়র রোভার মেট",
+        "image": "../images/10/senior.jpg"
+      },
+      "roverMates": [
+        {
+          "name": "মোঃ আজহারুল ইসলাম",
+          "department": "ইলেকট্রিক্যাল টেকনোলজি",
+          "responsibility": "রোভার মেট (বন্ধু)",
+          "image": "../images/10/rovermate1.jpg"
+        },
+        {
+          "name": "মোঃ শাহিন মিয়া",
+          "department": "সিভিল টেকনোলজি",
+          "responsibility": "রোভার মেট (বিনয়ী)",
+          "image": "../images/10/rovermate2.jpg"
+        },
+        {
+          "name": "মোঃ রফিকুল ইসলাম",
+          "department": "ইলেকট্রনিক্স টেকনোলজি",
+          "responsibility": "রোভার মেট (সদয়)",
+          "image": "../images/10/rovermate3.jpg"
+        }
+      ],
+      "assistantRoverMates": [
+        {
+          "name": "মোঃ সোহেল রানা",
+          "department": "মেকানিক্যাল টেকনোলজি",
+          "responsibility": "সহকারী রোভার মেট (বিশ্বাসী)",
+          "image": "../images/10/assistant1.jpg"
+        },
+        {
+          "name": "মোঃ মিজানুর রহমান",
+          "department": "কম্পিউটার টেকনোলজি",
+          "responsibility": "সহকারী রোভার মেট (বন্ধু)",
+          "image": "../images/10/assistan2.jpg"
+        },
+        {
+          "name": "মোঃ তানভীর আহমেদ",
+          "department": "ইলেকট্রিক্যাল টেকনোলজি",
+          "responsibility": "সহকারী রোভার মেট (বিনয়ী)",
+          "image": "../images/10/assistant3.jpg"
+        },
+        {
+          "name": "মোঃ জসিম উদ্দিন",
+          "department": "সিভিল টেকনোলজি",
+          "responsibility": "সহকারী রোভার মেট (সদয়)",
+          "image": "../images/10/assistant4.jpg"
+        }
+      ]
+    }
+  ]
+}

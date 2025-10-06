@@ -1,0 +1,56 @@
+{
+  "name": "বর্তমান ক্রু কাউন্সিল",
+  "year": "২০২৫-২০২৬",
+  "seniorRover": {
+    "name": "মোঃ নাহিদুল ইসলাম",
+    "department": "কম্পিউটার টেকনোলজি",
+    "responsibility": "সিনিয়র রোভার মেট",
+    "image": "../images/members/senior.jpg"
+  },
+  "roverMates": [
+    {
+      "name": "মোঃ সাইফুল ইসলাম",
+      "department": "ইলেকট্রিক্যাল টেকনোলজি",
+      "responsibility": "রোভার মেট (প্রথম)",
+      "image": "../images/members/rover1.jpg"
+    },
+    {
+      "name": "মোঃ রাকিব হাসান",
+      "department": "সিভিল টেকনোলজি",
+      "responsibility": "রোভার মেট (দ্বিতীয়)",
+      "image": "../images/members/rover2.jpg"
+    },
+    {
+      "name": "মোঃ হাসিবুল আলম",
+      "department": "ইলেকট্রনিক্স টেকনোলজি",
+      "responsibility": "রোভার মেট (তৃতীয়)",
+      "image": "../images/members/rover3.jpg"
+    }
+  ],
+  "assistantRoverMates": [
+    {
+      "name": "মোঃ আরিফ হোসেন",
+      "department": "কম্পিউটার টেকনোলজি",
+      "responsibility": "সহকারী রোভার মেট (প্রথম)",
+      "image": "../images/members/assistant1.jpg"
+    },
+    {
+      "name": "মোঃ সোহেল রানা",
+      "department": "ইলেকট্রিক্যাল টেকনোলজি",
+      "responsibility": "সহকারী রোভার মেট (দ্বিতীয়)",
+      "image": "../images/members/assistant2.jpg"
+    },
+    {
+      "name": "মোঃ মিজানুর রহমান",
+      "department": "সিভিল টেকনোলজি",
+      "responsibility": "সহকারী রোভার মেট (তৃতীয়)",
+      "image": "../images/members/assistant3.jpg"
+    },
+    {
+      "name": "মোঃ তানভীর আহমেদ",
+      "department": "মেকানিক্যাল টেকনোলজি",
+      "responsibility": "সহকারী রোভার মেট (চতুর্থ)",
+      "image": "../images/members/assistant4.jpg"
+    }
+  ]
+}
