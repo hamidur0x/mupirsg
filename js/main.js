@@ -1,4 +1,5 @@
-      // Loading Page Functionality
+        // All the JavaScript code from the previous implementation
+        // Loading Page Functionality
         window.addEventListener('load', function() {
             const loadingPage = document.getElementById('loading-page');
             setTimeout(() => {
@@ -461,25 +462,24 @@
             initBackToTop();
         });
 
-        
-
-
         // ===== Responsive Nav Toggle =====
-document.addEventListener('DOMContentLoaded', () => {
-  const toggle = document.querySelector('.nav-toggle');
-  const links = document.querySelector('.nav-links');
+        document.addEventListener('DOMContentLoaded', () => {
+          const toggle = document.querySelector('.mobile-menu');
+          const links = document.querySelector('.nav-links');
 
-  if (toggle && links) {
-    toggle.addEventListener('click', (e) => {
-      e.stopPropagation();
-      links.classList.toggle('show');
-    });
+          if (toggle && links) {
+            toggle.addEventListener('click', (e) => {
+              e.stopPropagation();
+              links.classList.toggle('show');
+              toggle.classList.toggle('active');
+            });
 
-    // Close menu when clicking outside
-    document.addEventListener('click', (e) => {
-      if (!e.target.closest('.site-nav')) {
-        links.classList.remove('show');
-      }
-    });
-  }
-});
+            // Close menu when clicking outside
+            document.addEventListener('click', (e) => {
+              if (!e.target.closest('.site-nav')) {
+                links.classList.remove('show');
+                toggle.classList.remove('active');
+              }
+            });
+          }
+        });
