@@ -27,7 +27,7 @@
                 if (!isShowing) {
                     menuItems.forEach((item, index) => {
                         item.style.animation = `fadeInColor 0.4s ease forwards ${index * 0.1}s`;
-                        item.style.opacity = '0';
+                        item.style.opacity = '1';
                     });
                 } else {
                     menuItems.forEach((item, index) => {
@@ -463,3 +463,23 @@
 
         
 
+
+        // ===== Responsive Nav Toggle =====
+document.addEventListener('DOMContentLoaded', () => {
+  const toggle = document.querySelector('.nav-toggle');
+  const links = document.querySelector('.nav-links');
+
+  if (toggle && links) {
+    toggle.addEventListener('click', (e) => {
+      e.stopPropagation();
+      links.classList.toggle('show');
+    });
+
+    // Close menu when clicking outside
+    document.addEventListener('click', (e) => {
+      if (!e.target.closest('.site-nav')) {
+        links.classList.remove('show');
+      }
+    });
+  }
+});

@@ -7,38 +7,52 @@
         <link rel="stylesheet"
             href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
         <link rel="stylesheet" href="../css/style.css">
-    </head>
+    
+    <link rel="stylesheet" href="css/style.css">
+</head>
     <body>
         <!-- Header Section -->
-        <header>
-            <div class="container header-container">
-                <div class="logo">
-                    <img src="../images/logo.png" alt="রোভার স্কাউট লোগো">
-                    <div class="logo-text">
-                        <h1>মুন্সিগঞ্জ পলিটেকনিক ইন্সটিটিউট রোভার স্কাউট
-                            গ্রুপ</h1>
-                    </div>
+<header>
+        <div class="container header-container">
+            <a href="../index.html" class="logo">
+                <img src="../images/logo.png" alt="MUPIRSG Logo">
+                <div class="logo-text">
+                    <h1>মুন্সিগঞ্জ পলিটেকনিক ইন্সটিটিউট</h1>
+                    <p>রোভার স্কাউট গ্রুপ</p>
                 </div>
-                <nav>
-                    <div class="mobile-menu">
-                        <i class="fas fa-bars"></i>
-                    </div>
-                    <ul>
-                        <li><a href="../index.html">হোম</a></li>
-                        <li><a href="../pages/about.html">আমাদের
-                                সম্পর্কে</a></li>
-                        <li><a
-                                href="../pages/activities.html">কার্যক্রম</a></li>
-                        <li><a href="../pages/current-crew-council.html">বর্তমান
-                                ক্রু কাউন্সিল</a></li>
-                        <li><a href="../pages/crew-council.html">সকল ক্রু
-                                কাউন্সিল</a></li>
-                        <li><a href="../pages/gallery.html">গ্যালারি</a></li>
-                        <li><a href="../pages/contact.html">যোগাযোগ</a></li>
-                    </ul>
-                </nav>
-            </div>
-        </header>
+            </a>
+            <nav>
+                <div class="mobile-menu">
+                    <i class="fas fa-bars"></i>
+                </div>
+                <ul>
+                    <li><a href="../index.html">হোম</a></li>
+                    <li><a href="../pages/about.html">আমাদের সম্পর্কে</a></li>
+                    <li><a href="../pages/activities.html">কার্যক্রম</a></li>
+
+                    <li class="dropdown">
+                        <a href="#">ক্রু কাউন্সিল <i class="fas fa-caret-down"></i></a>
+                        <ul class="dropdown-content">
+                            <li><a href="../pages/current-crew-council.html">বর্তমান ক্রু কাউন্সিল</a></li>
+                            <li><a href="../pages/crew-council.html">সকল ক্রু কাউন্সিল</a></li>
+                        </ul>
+                    </li>
+
+                    <li><a href="../pages/gallery.html">গ্যালারি</a></li>
+                    <li><a href="../pages/contact.html">যোগাযোগ</a></li>
+
+                    <li class="dropdown">
+                        <a href="#">রিসোর্স <i class="fas fa-caret-down"></i></a>
+                        <ul class="dropdown-content">
+                            <li><a href="../pages/badges.html">ব্যাজ সমূহ</a></li>
+                            <li><a href="../pages/promise-law.html">প্রতিজ্ঞা ও আইন</a></li>
+                            <li><a href="../pages/links.html">লিঙ্ক</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
 
         <!-- Page Hero -->
         <section class="hero"
@@ -181,5 +195,6 @@
         </footer>
 
         <script src="../js/main.js"></script>
-    </body>
+        <script src="main.js" defer></script>
+</body>
 </html>
