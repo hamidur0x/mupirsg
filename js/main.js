@@ -483,3 +483,25 @@
             });
           }
         });
+// In your initializeGallery function, modify the image creation part:
+function initializeGallery() {
+    // Update image count
+    document.getElementById('imageCount').textContent = galleryData.images.length;
+    
+    // Populate image gallery
+    const imageGallery = document.getElementById('imageGallery');
+    galleryData.images.forEach(image => {
+        const galleryItem = document.createElement('div');
+        galleryItem.className = 'gallery-item';
+        galleryItem.innerHTML = `
+            <img src="${image.url}" alt="${image.alt}" loading="lazy" 
+                 onerror="this.src='../images/placeholder.jpg'; this.alt='ছবিটি লোড করতে সমস্যা হচ্ছে'">
+            <div class="gallery-overlay">
+                <i class="fas fa-search-plus"></i>
+            </div>
+        `;
+        imageGallery.appendChild(galleryItem);
+    });
+
+    // ... rest of your code
+}
