@@ -1,0 +1,14 @@
+{
+    "images": [
+        { "url": "../images/mut/HERO.jpg", "alt": "ছবি 10" },
+        { "url": "../images/mut/9.jpg", "alt": "ছবি 9" },
+        { "url": "../images/mut/8.jpg", "alt": "ছবি 8" },
+        { "url": "../images/mut/7.jpg", "alt": "ছবি 7" },
+        { "url": "../images/mut/6.jpg", "alt": "ছবি 6" },
+        { "url": "../images/mut/5.jpg", "alt": "ছবি 5" },
+        { "url": "../images/mut/4.jpg", "alt": "ছবি 4" },
+        { "url": "../images/mut/3.jpg", "alt": "ছবি 3" },
+        { "url": "../images/mut/2.jpg", "alt": "ছবি 2" },
+        { "url": "../images/mut/1.jpg", "alt": "ছবি 1" }
+    ]
+}

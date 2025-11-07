@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MUPIRSG - ব্যাজ সমূহ</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <!-- হেডার -->
+    <header>
+        <div class="container header-container">
+            <a href="../index.html" class="logo">
+                <img src="../images/logo.png" alt="MUPIRSG Logo">
+                <div class="logo-text">
+                    <h1>মুন্সীগঞ্জ পলিটেকনিক ইন্সটিটিউট</h1>
+                    <p><b>রোভার স্কাউট গ্রুপ</b></p>
+                </div>
+            </a>
+            <nav>
+                <div class="mobile-menu">
+                    <i class="fas fa-bars"></i>
+                </div>
+                <ul>
+                    <li><a href="../index.html">হোম</a></li>
+                    <li><a href="../pages/about.html">আমাদের সম্পর্কে</a></li>
+                    <li><a href="../pages/activities.html">কার্যক্রম</a></li>
+
+                    <li class="dropdown">
+                        <a href="#">ক্রু কাউন্সিল <i class="fas fa-caret-down"></i></a>
+                        <ul class="dropdown-content">
+                            <li><a href="../pages/current-crew-council.html">বর্তমান ক্রু কাউন্সিল</a></li>
+                            <li><a href="../pages/crew-council.html">সকল ক্রু কাউন্সিল</a></li>
+                        </ul>
+                    </li>
+
+                    <li><a href="../pages/gallery.html">গ্যালারি</a></li>
+                    <li><a href="../pages/contact.html">যোগাযোগ</a></li>
+
+                    <li class="dropdown">
+                        <a href="#">রিসোর্স <i class="fas fa-caret-down"></i></a>
+                        <ul class="dropdown-content">
+                            <li><a href="../pages/badges.html">ব্যাজ সমূহ</a></li>
+                            <li><a href="../pages/book.html">বই সমূহ </a></li>
+                            <li><a href="../pages/links.html">লিঙ্ক</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- ব্যাজ পেজ -->
+    <div class="hero">
+        <div class="container">
+            <h2>রোভার ব্যাজ সমূহ</h2>
+            <p>স্কাউট জীবনে বিভিন্ন দক্ষতা অর্জনের জন্য ব্যাজ অর্জন করো</p>
+        </div>
+    </div>
+
+    <section class="section">
+        <div class="container">
+            <div class="section-title">
+                <h2>রোভার ব্যাজ</h2>
+                <p>নিজেকে চ্যালেঞ্জ করো এবং তোমার অর্জনের স্বীকৃতি পাও</p>
+            </div>
+
+            <div class="badges-container">
+                <div class="badge-categories">
+                    <button class="badge-category-btn active" data-category="all">সব ব্যাজ</button>
+                    <button class="badge-category-btn" data-category="outdoor">বহিরাঙ্গন</button>
+                    <button class="badge-category-btn" data-category="skills">দক্ষতা</button>
+                    <button class="badge-category-btn" data-category="service">সেবা</button>
+                </div>
+
+                <div class="badges-grid">
+                    <!-- বহিরাঙ্গন ব্যাজ -->
+                    <div class="badge-card" data-category="outdoor">
+                        <div class="badge-img">
+                            <i class="fas fa-campground"></i>
+                        </div>
+                        <div class="badge-content">
+                            <h3>ক্যাম্পিং ব্যাজ</h3>
+                            <p>ক্যাম্প স্থাপন, রান্না, ও নিরাপত্তা সম্পর্কে শেখো।</p>
+                            <span class="badge-difficulty difficulty-beginner">শুরু</span>
+                        </div>
+                    </div>
+
+                    <div class="badge-card" data-category="outdoor">
+                        <div class="badge-img">
+                            <i class="fas fa-hiking"></i>
+                        </div>
+                        <div class="badge-content">
+                            <h3>হাইকিং ব্যাজ</h3>
+                            <p>হাঁটা, দিক নির্ণয় ও মানচিত্র ব্যবহার শিখে হাইক সম্পন্ন করো।</p>
+                            <span class="badge-difficulty difficulty-intermediate">মধ্যম</span>
+                        </div>
+                    </div>
+
+                    <!-- দক্ষতা ব্যাজ -->
+                    <div class="badge-card" data-category="skills">
+                        <div class="badge-img">
+                            <i class="fas fa-first-aid"></i>
+                        </div>
+                        <div class="badge-content">
+                            <h3>প্রাথমিক চিকিৎসা ব্যাজ</h3>
+                            <p>জরুরি অবস্থায় প্রাথমিক চিকিৎসা দেওয়া শেখো।</p>
+                            <span class="badge-difficulty difficulty-beginner">শুরু</span>
+                        </div>
+                    </div>
+
+                    <div class="badge-card" data-category="skills">
+                        <div class="badge-img">
+                            <i class="fas fa-fire"></i>
+                        </div>
+                        <div class="badge-content">
+                            <h3>পাইওনিয়ারিং ব্যাজ</h3>
+                            <p>দড়ি বাঁধা, ল্যাশিং ও কাঠামো তৈরি শেখো।</p>
+                            <span class="badge-difficulty difficulty-intermediate">মধ্যম</span>
+                        </div>
+                    </div>
+
+                    <div class="badge-card" data-category="skills">
+                        <div class="badge-img">
+                            <i class="fas fa-map-marked-alt"></i>
+                        </div>
+                        <div class="badge-content">
+                            <h3>নেভিগেশন ব্যাজ</h3>
+                            <p>কম্পাস ও মানচিত্র ব্যবহার করে সঠিকভাবে পথ খুঁজে বের করা শেখো।</p>
+                            <span class="badge-difficulty difficulty-advanced">উচ্চ</span>
+                        </div>
+                    </div>
+
+                    <!-- সেবা ব্যাজ -->
+                    <div class="badge-card" data-category="service">
+                        <div class="badge-img">
+                            <i class="fas fa-hands-helping"></i>
+                        </div>
+                        <div class="badge-content">
+                            <h3>সেবা ব্যাজ</h3>
+                            <p>সমাজ ও পরিবেশের জন্য সেবা কার্যক্রমে অংশ নাও।</p>
+                            <span class="badge-difficulty difficulty-beginner">শুরু</span>
+                        </div>
+                    </div>
+
+                    <div class="badge-card" data-category="service">
+                        <div class="badge-img">
+                            <i class="fas fa-leaf"></i>
+                        </div>
+                        <div class="badge-content">
+                            <h3>প্রকৃতি সংরক্ষণ ব্যাজ</h3>
+                            <p>পরিবেশ রক্ষা ও বৃক্ষরোপণ কার্যক্রমে অংশগ্রহণ করো।</p>
+                            <span class="badge-difficulty difficulty-intermediate">মধ্যম</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ফুটার -->
+<footer>
+            <div class="container">
+                <div class="footer-content">
+                    <div class="footer-image">
+                        <img src="../images/logo.png" alt="404">
+                    </div>
+                    <div class="footer-column">
+                        <h3>মুন্সীগঞ্জ পলিটেকনিক রোভার স্কাউট</h3>
+                        <p>তরুণদের চরিত্র গঠন, নাগরিক দায়িত্ব এবং শারীরিক
+                            সুস্থতার জন্য কাজ করছি ১৯৯৫ সাল থেকে।</p>
+                        <div class="social-links">
+                            <a href="#"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                            <a href="#"><i class="fab fa-youtube"></i></a>
+                        </div>
+                    </div>
+                    <div class="footer-column">
+                        <h3>দ্রুত লিংক</h3>
+                        <ul class="footer-links">
+                            <li><a href="index.html">হোম</a></li>
+                            <li><a href="pages/about.html">আমাদের
+                                    সম্পর্কে</a></li>
+                            <li><a
+                                    href="pages/activities.html">কার্যক্রম</a></li>
+                            <li><a href="pages/gallery.html">গ্যালারি</a></li>
+                            <li><a href="pages/contact.html">যোগাযোগ</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h3>কার্যক্রম</h3>
+                        <ul class="footer-links">
+                            <li><a
+                                    href="pages/activities.html">ক্যাম্পিং</a></li>
+                            <li><a href="pages/activities.html">সামাজিক
+                                    সেবা</a></li>
+                            <li><a
+                                    href="pages/activities.html">প্রশিক্ষণ</a></li>
+                            <li><a href="pages/activities.html">রক্তদান</a></li>
+                            <li><a
+                                    href="pages/activities.html">বৃক্ষরোপণ</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="copyright">
+                    <p>&copy; ২০২৫ মুন্সীগঞ্জ পলিটেকনিক ইন্সটিটিউট রোভার স্কাউট
+                        গ্রুপ। সকল স্বত্ব সংরক্ষিত।</p>
+                </div>
+            </div>
+        </footer>
+
+    <script src="../js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>গ্যালারি - মুন্সীগঞ্জ পলিটেকনিক রোভার স্কাউট</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+
+    <!-- Only Lightbox CSS (no additional styling) -->
+    <style>
+        /* ===== Lightbox Styles ===== */
+        .lightbox {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0,0,0,0.9);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            z-index: 9999;
+            opacity: 0;
+            animation: fadeIn .3s forwards;
+        }
+        @keyframes fadeIn { to { opacity: 1; } }
+
+        .lightbox-content {
+            position: relative;
+            text-align: center;
+            max-width: 90%;
+            max-height: 90%;
+        }
+
+        .lightbox-content img {
+            max-width: 100%;
+            max-height: 80vh;
+            border-radius: 10px;
+        }
+
+        .lightbox .close {
+            position: absolute;
+            top: -45px;
+            right: 0;
+            color: white;
+            font-size: 40px;
+            cursor: pointer;
+        }
+        .image-caption {
+            color: #fff;
+            margin-top: 15px;
+            font-size: 18px;
+        }
+
+        /* ===== Hero Section Padding Fix ===== */
+        .hero .container {
+            padding-top: 30px; /* move text closer to top */
+            padding-bottom: 60px;
+            text-align: center;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <div class="container header-container">
+        <a href="../index.html" class="logo">
+            <img src="../images/logo.png" alt="Logo">
+            <div class="logo-text">
+                <h1>মুন্সীগঞ্জ পলিটেকনিক ইন্সটিটিউট</h1>
+                <p><b>রোভার স্কাউট গ্রুপ</b></p>
+            </div>
+        </a>
+
+        <nav>
+                <div class="mobile-menu">
+                    <i class="fas fa-bars"></i>
+                </div>
+                <ul>
+                    <li><a href="../index.html">হোম</a></li>
+                    <li><a href="../pages/about.html">আমাদের সম্পর্কে</a></li>
+                    <li><a href="../pages/activities.html">কার্যক্রম</a></li>
+
+                    <li class="dropdown">
+                        <a href="#">ক্রু কাউন্সিল <i class="fas fa-caret-down"></i></a>
+                        <ul class="dropdown-content">
+                            <li><a href="../pages/current-crew-council.html">বর্তমান ক্রু কাউন্সিল</a></li>
+                            <li><a href="../pages/crew-council.html">সকল ক্রু কাউন্সিল</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="dropdown">
+                            <a href="#">গ্যালারি <i
+                                    class="fas fa-caret-down"></i></a>
+                            <ul class="dropdown-content">
+                                <li><a href="../pages/crew_image.html">ক্রু মিটিং
+                                        এর ছবি সমূহ</a></li>
+                                <li><a href="../pages/events.html">সকল কার্যক্রমের
+                                        ছবি সমূহ</a></li>
+                                <li><a href="../pages/hinikg_img.html">হাইকিং এর
+                                        ছবি সমূহ</a></li>
+                                <li><a href="../pages/mut.html">রোভার মুটের ছবি
+                                        সমূহ</a></li>
+                                <li><a href="../pages/dikkha.html">দীক্ষা
+                                        অনুষ্ঠানের ছবি সমূহ</a></li>
+                            </ul>
+                        </li>
+                    <li><a href="../pages/contact.html">যোগাযোগ</a></li>
+
+                    <li class="dropdown">
+                        <a href="#">রিসোর্স <i class="fas fa-caret-down"></i></a>
+                        <ul class="dropdown-content">
+                            <!-- <li><a href="../pages/badges.html">ব্যাজ সমূহ</a></li> -->
+                            <li><a href="../pages/book.html">বই সমূহ </a></li>
+                            <!-- <li><a href="../pages/links.html">লিঙ্ক</a></li> -->
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+    </div>
+</header>
+
+<section class="hero" style="background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)), url('../images/gallery/1.avif');">
+    <div class="container">
+        <h2>আমাদের গ্যালারি</h2>
+        <p>রোভার স্কাউট কার্যক্রমের স্মৃতি</p>
+    </div>
+</section>
+
+<section class="section">
+    <div class="container">
+
+        <!-- Loading -->
+        <div id="loadingState" class="loading">
+            <i class="fas fa-spinner fa-spin"></i>
+            <p>গ্যালারি লোড হচ্ছে...</p>
+        </div>
+
+        <!-- Error -->
+        <div id="errorState" class="error-message" style="display:none;">
+            <i class="fas fa-exclamation-circle"></i>
+            <p>ডেটা লোড করতে সমস্যা হয়েছে।</p>
+        </div>
+    </div>
+</section>
+
+<!-- ✅ ONLY IMAGE GALLERY -->
+<section class="section" id="imageGallerySection" style="display:none;">
+    <div class="container">
+        <div class="section-title">
+            <h2>ছবি গ্যালারি</h2>
+            <p>মোট <span id="imageCount">0</span> টি ছবি</p>
+        </div>
+
+        <div class="gallery-grid" id="imageGallery"></div>
+    </div>
+</section>
+
+<!-- Footer -->
+        <footer>
+            <div class="container">
+                <div class="footer-content">
+                    <div class="footer-image">
+                        <img src="../images/logo.png" alt="লোগো">
+                    </div>
+                    <div class="footer-column">
+                        <h3>মুন্সীগঞ্জ পলিটেকনিক রোভার স্কাউট</h3>
+                        <p>তরুণদের চরিত্র গঠন, নাগরিক দায়িত্ব এবং শারীরিক
+                            সুস্থতার জন্য কাজ করছি ১৯৯৫ সাল থেকে।</p>
+                        <div class="social-links">
+                            <a href="#"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                            <a href="#"><i class="fab fa-youtube"></i></a>
+                        </div>
+                    </div>
+                    <div class="footer-column">
+                        <h3>দ্রুত লিংক</h3>
+                        <ul class="footer-links">
+                            <li><a href="../index.html">হোম</a></li>
+                            <li><a href="about.html">আমাদের সম্পর্কে</a></li>
+                            <li><a href="activities.html">কার্যক্রম</a></li>
+                            <li><a href="gallery.html">গ্যালারি</a></li>
+                            <li><a href="contact.html">যোগাযোগ</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h3>কার্যক্রম</h3>
+                        <ul class="footer-links">
+                            <li><a href="activities.html">ক্যাম্পিং</a></li>
+                            <li><a href="activities.html">সামাজিক সেবা</a></li>
+                            <li><a href="activities.html">প্রশিক্ষণ</a></li>
+                            <li><a href="activities.html">রক্তদান</a></li>
+                            <li><a href="activities.html">বৃক্ষরোপণ</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="copyright">
+                    <p>&copy; ২০২৫ মুন্সীগঞ্জ পলিটেকনিক ইন্সটিটিউট রোভার স্কাউট
+                        গ্রুপ। সকল স্বত্ব সংরক্ষিত।</p>
+                </div>
+            </div>
+        </footer>
+
+
+<script src="../js/main.js"></script>
+
+<!-- ✅ SCRIPT: Only Image Gallery (JSON) -->
+<script>
+    let galleryData = {};
+
+    async function loadGalleryData() {
+        try {
+            const res = await fetch('../data/crew-data.json', { cache: 'no-cache' });
+            if (!res.ok) throw new Error();
+
+            galleryData = await res.json();
+
+            document.getElementById("loadingState").style.display = "none";
+            document.getElementById("imageGallerySection").style.display = "block";
+
+            buildGallery();
+            enableLightbox();
+
+        } catch (e) {
+            document.getElementById("loadingState").style.display = "none";
+            document.getElementById("errorState").style.display = "block";
+        }
+    }
+
+    function buildGallery() {
+        const grid = document.getElementById("imageGallery");
+        grid.innerHTML = "";
+
+        document.getElementById("imageCount").textContent = galleryData.images.length;
+
+        galleryData.images.forEach(item => {
+            const div = document.createElement("div");
+            div.className = "gallery-item";
+
+            div.innerHTML = `
+                <img src="${item.url}" alt="${item.alt}">
+                <div class="gallery-overlay"><i class="fas fa-search-plus"></i></div>
+            `;
+
+            grid.appendChild(div);
+        });
+    }
+
+    function enableLightbox() {
+        document.addEventListener("click", e => {
+            const box = e.target.closest(".gallery-item");
+            if (!box) return;
+
+            const img = box.querySelector("img");
+
+            const overlay = document.createElement("div");
+            overlay.className = "lightbox";
+            overlay.innerHTML = `
+                <div class="lightbox-content">
+                    <span class="close">&times;</span>
+                    <img src="${img.src}" alt="${img.alt}">
+                    <div class="image-caption">${img.alt}</div>
+                </div>
+            `;
+
+            document.body.appendChild(overlay);
+
+            overlay.querySelector(".close").onclick = () => overlay.remove();
+            overlay.onclick = e => { if (e.target === overlay) overlay.remove(); };
+
+            document.addEventListener("keydown", function escape(ev) {
+                if (ev.key === "Escape") {
+                    overlay.remove();
+                    document.removeEventListener("keydown", escape);
+                }
+            });
+        });
+    }   
+
+    document.addEventListener("DOMContentLoaded", () => {
+        loadGalleryData();
+
+        // document.querySelector(".mobile-menu").onclick = () => {
+        //     document.querySelector("nav ul").classList.toggle("show");
+        // };
+    });
+</script>
+
+</body>
+</html>
