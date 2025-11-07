@@ -1899,6 +1899,10 @@ footer::before {
     .hero p {
         font-size: 1.1rem;
     }
+    .hero img {
+        max-width: 100%;
+        height: auto;
+    }
 
     /* .section {
         padding: 80px 0;
@@ -2115,5 +2119,62 @@ footer::before {
 
     a::after {
         content: " (" attr(href) ")";
+    }
+}
+
+
+ @media (max-width: 768px) {
+    .hero {
+        padding: 80px 0; /* Even smaller padding on very small screens */
+        min-height: 50vh;
+        background-attachment: scroll; /* Essential for mobile */
+    }
+    
+    .hero h2 {
+        font-size: 1.8rem;
+        margin-bottom: 12px;
+    }
+    
+    .hero p {
+        font-size: 1rem;
+        margin-bottom: 25px;
+    }
+    
+    /* Ensure background image covers properly on mobile */
+    .hero {
+        background-size: cover;
+        background-position: center center;
+    }
+}
+
+@media (max-width: 576px) {
+    .hero {
+        padding: 60px 0;
+        min-height: 40vh;
+    }
+    
+    .hero h2 {
+        font-size: 1.6rem;
+    }
+    
+    .hero p {
+        font-size: 0.95rem;
+    }
+    
+    .btn {
+        padding: 12px 25px;
+        font-size: 0.95rem;
+    }
+}
+
+/* For very small devices */
+@media (max-width: 375px) {
+    .hero {
+        padding: 50px 0;
+        min-height: 35vh;
+    }
+    
+    .hero h2 {
+        font-size: 1.4rem;
     }
 }
