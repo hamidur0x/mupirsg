@@ -2102,9 +2102,9 @@ footer::before {
         padding: 20px 0;
     }
 
-    .section {
+    /* .section {
         padding: 40px 0;
-    }
+    } */
 
     a::after {
         content: " (" attr(href) ")";
